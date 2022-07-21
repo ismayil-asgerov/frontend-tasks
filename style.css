@@ -1,14 +1,28 @@
 
 body{
-    background-color: #184C99;
+    background-image: url("./images/hero-8-bg-shape-cover-dark.png");
+    background-repeat: no-repeat;
+    background-color: #252B42;
+    /* Center and scale the image nicely */
+    background-size:contain
 }
 
 .container{
-    margin:10rem;
+    margin:5rem 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+
 
 .box1{
 margin-top: 10rem;
+
+    display: grid;
+    grid-template-areas:
+      'item1 item1 item1 item2 item2 item2 '
+      'item3 item3 item3 item3 item3 item3';
 }
 
 .box1__item1 
@@ -37,50 +51,7 @@ margin-top: 10rem;
     width: 470px;
 }
 
-.box1__item2{
-    
-    grid-area: item2; 
-    padding-top: 2rem;
-    width: 477px;
-    height: 555px;
-    position: relative;
-    left: 200px;
 
-}
-
-.box1__item2__img1{
-    position: absolute;
-     grid-area: item2;
-      left:90px;
-      top : 20px;
-}
-.box1__item2__img2{
-    grid-area: item2;
-    position: absolute;
-     left:50px;
-     bottom: 100px;
-}
-.box1__item2__img3{
-    grid-area: item2;
-    position: absolute;
-     left:-30px;
-     top: 140px;
-}
-
-.box1__item2__img4{
-    grid-area: item2;
-    position: absolute;
-     left:60px;
-     top: 370px;
-}
-
-
-.box1__item2__img5{
-    grid-area: item2;
-    position: absolute;
-     left:465px;
-     top: 170px;
-}
 
 .box1__item1__btn{
     margin-top: 1rem;
@@ -111,6 +82,7 @@ margin-top: 10rem;
  }
 
 .box1__item3{ 
+    padding-top: 14rem;
     grid-area: item3; 
     display: flex;
     justify-content: space-around;
@@ -126,44 +98,34 @@ margin-top: 10rem;
     background-color: #fff;
     border-radius: 2px;
     padding: 2rem;
-  
-}
-.box1__item3_card1{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
-.box1__item3_card1 hr{
+
+.box1__item3__line{
     width: 50px;
     height: 3px;
     background-color: #E74040;
     border:none
  }
+
+ .box1__item3__text{
+    color: #737373;
+    text-shadow: 2px 2px 8px #b8b1b1;
+    font-size: 1.4rem;
+    
+ }
  .box1__item3 strong{ 
      font-weight: bold;
-     font-size: large;
+     font-size: 1.3rem;
  }
 .box1__item3 img{
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     background-color: #fff;
     border-radius: 2px;
     padding: 0.5rem;
   
 }
-
-.box1{
-    display: grid;
-    grid-template-areas:
-      'item1 item1 item1 item2 item2 item2 '
-      'item3 item3 item3 item3 item3 item3';
-      gap: 10px;
-    width: 100%;
-    height: 100vh;
-}
-
 
 
 
@@ -214,3 +176,145 @@ li{
   padding-left: 1rem;
 }
 
+
+
+.box2{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+
+.box2__card1{
+    position: relative;
+}
+
+
+.box2__card2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 300px;
+}
+
+.box2__card2__line{
+    width: 100px;
+    height: 8px;
+    background-color: #E74040;
+    border:none
+}
+
+.box2__card2 strong{
+   color: #fff;
+   font-size: 3rem;
+   width: 300px;
+}
+
+.box2__card2__text1{
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+.box2__card2__text2{
+    color: #23A6F0;
+    font-size: 1rem;
+}
+
+
+.box3__text1{
+    margin-top: 10rem;
+    color: #23A6F0;
+}
+
+.box3__text2{
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.box3__text3{
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 380px;
+}
+
+.box3__cards{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box3__cards__card{
+    width:329px;
+    height: 700px;
+    background-color: #fff;
+}
+
+.box3__cards__card p{
+    padding:1rem  ;
+    
+}
+
+.box3__cards__card_txt1{
+    color: #23A6F0;
+}
+.box3__cards__card_txt2{
+    color: #252B42;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.box3__cards__card_txt3{
+    color: #737373;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.box3__cards__card_txt4{
+    color: #737373;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.box3__cards__card_txt5{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.box3__cards__card_txt5 span{
+  color: #40BB15;
+  
+}
+.box3__ul{
+    padding-top:1rem ;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box3__ul li{
+    color: #737373;
+    font-size: 0.8rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.box3__btn{
+    margin-top:1rem ;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #23A6F0;
+    color: #23A6F0;
+    outline: none;
+    border-radius: 20px;
+    margin-left: 1rem;
+}
