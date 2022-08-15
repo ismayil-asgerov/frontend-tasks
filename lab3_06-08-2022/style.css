@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:none ;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(156, 61, 61);
+    width:100%;
+    display: flex;
+
+}
+
+
+.container{
+
+    width: 100%;
+    
+}
+
+.search{
+    margin:100px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+}
